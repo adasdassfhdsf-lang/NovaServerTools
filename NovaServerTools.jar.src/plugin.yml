@@ -1,0 +1,41 @@
+name: NovaServerTools
+version: 1.0.0
+main: com.novablox.servertools.NovaServerTools
+api-version: '1.21'
+author: NOVABLOX
+description: Yetkili araçları ve bakım sistemi.
+commands:
+  clearchat:
+    description: Sohbeti temizler.
+    permission: novaservertools.clearchat
+  maintenance:
+    description: Bakım modunu açar/kapatır.
+    permission: novaservertools.maintenance
+  fly:
+    description: Uçuşu açar/kapatır.
+    permission: novaservertools.fly
+  vanish:
+    description: Görünmezliği açar/kapatır.
+    permission: novaservertools.vanish
+  freeze:
+    description: Oyuncuyu dondurur/çözer.
+    usage: /freeze <oyuncu>
+    permission: novaservertools.freeze
+  staffchat:
+    description: Yetkili sohbeti.
+    usage: /staffchat <mesaj>
+    aliases: [sc]
+    permission: novaservertools.staffchat
+  invsee:
+    description: Oyuncunun envanterini açar.
+    usage: /invsee <oyuncu>
+    permission: novaservertools.invsee
+permissions:
+  novaservertools.clearchat: { default: op }
+  novaservertools.maintenance: { default: op }
+  novaservertools.fly: { default: op }
+  novaservertools.vanish: { default: op }
+  novaservertools.freeze: { default: op }
+  novaservertools.staffchat: { default: op }
+  novaservertools.invsee: { default: op }
+  novaservertools.vanishsee: { default: op }
